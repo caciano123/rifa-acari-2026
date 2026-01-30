@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RIFA DESAFIO MACAÍBA-ACARI 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .grid-20 {
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        gap: 2px;
+      }
+      @media (max-width: 1200px) {
+        .grid-20 { grid-template-columns: repeat(10, 1fr); }
+      }
+      @media (max-width: 640px) {
+        .grid-20 { grid-template-columns: repeat(5, 1fr); }
+      }
+      .raffle-cell {
+        aspect-ratio: 4 / 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #e5e7eb;
+        transition: all 0.2s ease;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
